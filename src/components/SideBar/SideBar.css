@@ -1,0 +1,16 @@
+.left_side {
+    padding: 1rem;
+    border-radius: .45rem;
+    margin:0rem 5rem;
+}
+
+.tagline{
+    background-color: rgb(243, 243, 243);
+    margin-top: 2rem;
+    padding: .8rem;
+    border-radius: .5rem;
+}
+.tagline:hover{
+    color: #524ad9;
+    border: 1px solid #524ad9;
+}

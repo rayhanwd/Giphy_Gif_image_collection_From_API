@@ -1,24 +1,16 @@
-import logo from './logo.svg';
+import React,{useState, createContext} from 'react';
 import './App.css';
+import Home from './Pages/Home';
+export const SearchContext = createContext();
+// https://api.giphy.com/v1/gifs/search?q=trading&api_key=il5MDqwSzoS16i6I0aYfVLw0jp7FxUUc
 
 function App() {
+
+  const [search, setSearch] = useState();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SearchContext.Provider value={[search, setSearch]}>
+    <Home />
+    </SearchContext.Provider>
   );
 }
 

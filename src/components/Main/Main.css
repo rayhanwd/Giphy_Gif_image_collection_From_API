@@ -1,0 +1,13 @@
+.container {
+    margin: 0rem 5rem;
+}
+
+.row {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.main {
+    display: flex;
+}
